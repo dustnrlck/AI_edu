@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>진주 문화유적 탐방</title>
+<style>
+  :root{
+    --navy:#1c2b45;
+    --gold:#c9a24b;
+    --cream:#f7f3ea;
+    --ink:#2b2b2b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:"Noto Serif KR","Malgun Gothic",serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.7;
+  }
+  header{
+    background:linear-gradient(135deg, var(--navy), #33456b);
+    color:#fff;
+    padding:80px 20px 60px;
+    text-align:center;
+  }
+  header h1{
+    font-size:2.6rem;
+    letter-spacing:2px;
+    margin-bottom:12px;
+  }
+  header p{
+    font-size:1.1rem;
+    color:var(--gold);
+    letter-spacing:1px;
+  }
+  nav.breadcrumb{
+    max-width:1000px;
+    margin:0 auto;
+    padding:14px 20px;
+    font-size:0.9rem;
+    color:#666;
+  }
+  main{
+    max-width:1000px;
+    margin:0 auto;
+    padding:20px;
+  }
+  section.intro{
+    text-align:center;
+    padding:30px 10px 50px;
+  }
+  section.intro p{
+    max-width:700px;
+    margin:0 auto;
+    color:#444;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:24px;
+    padding-bottom:60px;
+  }
+  .card{
+    display:block;
+    background:#fff;
+    border:1px solid #e2dbc9;
+    border-radius:8px;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    transition:transform .2s, box-shadow .2s;
+    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+  }
+  .card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.12);
+  }
+  .card .thumb{
+    height:110px;
+    background:var(--navy);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--gold);
+    font-size:2rem;
+  }
+  .card .body{
+    padding:20px;
+  }
+  .card h2{
+    font-size:1.25rem;
+    color:var(--navy);
+    margin-bottom:8px;
+  }
+  .card p{
+    font-size:0.92rem;
+    color:#555;
+  }
+  .card .tag{
+    display:inline-block;
+    margin-top:12px;
+    font-size:0.78rem;
+    color:var(--gold);
+    letter-spacing:0.5px;
+  }
+  footer{
+    background:var(--navy);
+    color:#cbd3e0;
+    text-align:center;
+    padding:30px 20px;
+    font-size:0.85rem;
+  }
+  footer a{color:var(--gold);}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>진주(晉州), 역사와 예향의 도시</h1>
+  <p>경상남도 진주시 문화와 유적지 안내</p>
+</header>
+
+<main>
+  <section class="intro">
+    <p>
+      진주는 임진왜란의 격전지이자 논개의 충절이 서린 고장이며, 남강을 따라 촉석루와 진주성이 굽어보는
+      예향(藝鄕)의 도시입니다. 아래 항목을 눌러 각 유적지의 상세한 역사와 정보를 확인해 보세요.
+    </p>
+  </section>
+
+  <section class="grid">
+    <a class="card" href="jinjuseong/index.html">
+      <div class="thumb">城</div>
+      <div class="body">
+        <h2>진주성</h2>
+        <p>임진왜란 3대 대첩 중 하나인 진주성 전투의 무대이자 진주의 상징적인 성곽 유적지입니다.</p>
+        <span class="tag">사적 · 성곽</span>
+      </div>
+    </a>
+
+    <a class="card" href="chokseongnu/index.html">
+      <div class="thumb">樓</div>
+      <div class="body">
+        <h2>촉석루</h2>
+        <p>남강 벼랑 위에 자리한 우리나라 3대 누각 중 하나로, 진주성의 주장대 역할을 했습니다.</p>
+        <span class="tag">경상남도 유형문화유산</span>
+      </div>
+    </a>
+
+    <a class="card" href="uigisa/index.html">
+      <div class="thumb">義</div>
+      <div class="body">
+        <h2>의기사 &amp; 의암</h2>
+        <p>논개의 충절을 기리는 사당과, 왜장과 함께 남강에 몸을 던진 의암 유적입니다.</p>
+        <span class="tag">논개 · 사당</span>
+      </div>
+    </a>
+
+    <a class="card" href="museum/index.html">
+      <div class="thumb">博</div>
+      <div class="body">
+        <h2>국립진주박물관</h2>
+        <p>임진왜란을 주제로 한 전문 역사박물관으로, 진주성 전투의 유물을 만나볼 수 있습니다.</p>
+        <span class="tag">1984년 개관</span>
+      </div>
+    </a>
+
+    <a class="card" href="yudeung-festival/index.html">
+      <div class="thumb">燈</div>
+      <div class="body">
+        <h2>진주남강유등축제</h2>
+        <p>진주성 전투의 군사 신호였던 유등에서 유래한 대한민국 대표 축제입니다.</p>
+        <span class="tag">매년 10월 · 남강 일원</span>
+      </div>
+    </a>
+  </section>
+</main>
+
+<footer>
+  <p>본 페이지는 공개 자료를 바탕으로 제작되었습니다. 각 상세 페이지 하단의 출처를 참고하세요.</p>
+</footer>
+
+</body>
+</html>
